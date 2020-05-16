@@ -15,10 +15,10 @@
 
     .progress-title {
         float: left;
-
+        font-size: 12px;
         font-weight: 700;
         color: #000;
-        margin: 0 0 15px 30px;
+        margin: 0 0 13px 15px;
         width: 100px;
     }
     .progress .progress-bar {
