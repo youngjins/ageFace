@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>레이아웃</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+    div#wrap {
+        width: 900px;
+        margin: 0 auto;
+        background: #ddd;
+    }
+
+    header#header {
+        background: #fdd;
+    }
+
+    nav#nav {
+        background: #dfd;
+    }
+
+    section#container {
+        background: #ddf;
+    }
+
+    div.content {
+        background: #eee;
+    }
+
+    footer#footer {
+        background: #ffe;
+    }
+
+    div#warp,
+    header#header,
+    nav#nav,
+    section#container,
+    div.content,
+    aside#aside,
+    footer#footer {
+        padding: 10px;
+    }
+
+    nav#nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav#nav ul li {
+        background: #eee;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    div.content {
+        width: 97.7%;
+        float: left;
+    }
+
+    section#container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @media screen and (max-width: 910px) {
+        div#wrap {
+            width: calc(100% - 20px);
+        }
+        div.content {
+            width: calc(100% - 20px - 240px - 20px);
+        }
+        @media screen and (max-width: 650px) {
+            div.content {
+                width: calc(100% - 20px);
+                float: none;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>blog</h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="/ageFace/blog/list.html">홈</a>
+                </li>
+                <li>
+                    <a href="https://melonpeach.tistory.com">MelonPeach</a>
+                </li>
+                <li>
+                    <a href="/ageFace/index.html">FaceAge</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="container">
+            <div class="content">
+                <article>
+
+                    <p>
+                        <h2>
+                            자바 제어문
+                        </h2>
+                        <strong>* 제어문</strong>
+                        <br/> - 프로그램의 흐름에 영향을 주고 때에 따라 제어가 가능하도록 하는 것
+                        <br/> - 제어문의 종류는 조건문과 반복문이 있다.
+                        <br/>
+                        <br/>
+                        <strong>* 조건문(if문, switch문)</strong>
+                        <br/> - 조건문은 주어진 조건식의 결과에 따라 별도의 명령을 수행하도록 제어하는 명령문
+                        <br/>
+                        <br/>
+                        <strong>* 반복문(for문, while문, do~while문)</strong>
+                        <br/> - 반복문이란 프로그램 내에서 똑같은 명령을 일정 횟수만큼 반복하여 수행하도록 제어하는 명령문
+                        <br/> - 동일하거나 유사한 문장을 수치에 의해 제어하는 문.
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h2>
+                            조건문
+                        </h2>
+
+                        <strong>* if문</strong>
+                        <br/> - 조건식과 하나의 문자 또는 블록{}으로 구성.
+                        <br/> - if(조건식) 실행문;
+                        <br/> - if(조건식){ 실행문; }else{ 실행문; }
+
+                        <br/> - if(조건식){ 실행문; } else if(조건식){ 실행문; } else{ 실행문; }
+
+                        <br/>
+                        <br/>
+                        <strong>* switch문</strong>
+                        <br/> - 특정 수나 문자에 의해 위치 이동을 제어
+                        <br/> - if 문과 달리 조건식의 계산 결과가 int 범위 이하의 정수만 가능.
+
+                        <br/> - java7 이후 부터는 문자열도 가능
+                        <br/> - case 문의 값으로 변수를 사용할 수 없다. (리터럴 또는 상수만 가능)
+                        <br/> - switch(변수){ case 값1: 실행문; break; case 값2: 실행문; break; default : 만족하는 case가 없을 때 실행. 생략가능}
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <h2>
+                            반복문
+                        </h2>
+                        <strong>* for문</strong>
+                        <br/> - 동일하거나 유사한 문장을 수치에 의해 제어하는 문
+                        <br/> - for(①초기화식; ②조건식; ④증감식){ // 조건식이 true일때 반복 실행이 될 내용③실행문;}
+                        <br/>
+                        <br/>
+                        <strong>* continue문</strong>
+                        <br/> - 자신이 포함된 반복문의 끝으로 이동한다.
+
+                        <br/> - continue문 이후의 문장들은 수행되지 않는다.
+                        <br/>
+                        <br/>
+                        <strong>* break문</strong>
+                        <br/> - 자신이 포함된 하나의 바복문 또는 switch문을 빠져 나온다.
+                        <br/>
+                        <br/>
+                        <strong>* while문</strong>
+                        <br/> - for문과 같이 문장의 반복 수행을 하나 for문이 수치에 의한 반복이라면 while문은 행위에 의한 반복문이다.
+                        <br/> - while(①조건식){ // 조건식이 true일때 반복 실행이 될 내용 ②실행문;}
+                        <br/>
+                        <br/>
+                    <strong>* do ~ while문</strong>
+                        <br/> - 선 실행 후 조건 비교 반복하는 제어문.
+                        <br/> - 조건식에 의해 반복 실행한다는 점에서는 while문과 동일
+                        <br/> - do{
+// 조건식이 true일때 반복 실행이 될 내용
+①실행문;} while(②조건식);
+                        <br/>
+                    </p>
+                </article>
+            </div>
+            <div style="clear:both;"></div>
+        </section>
+        <footer id="footer">
+            # footer
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <title>레이아웃</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+    <style>
+        div#wrap { width:900px; margin:0 auto; background:#ddd; }
+        header#header { background:#fdd; }
+        nav#nav { background:#dfd; }
+        section#container { background:#ddf; }
+            div.content { background:#eee; }
+            aside#aside { background:#fef; }
+        footer#footer { background:#ffe; }
+       
+        div#warp, header#header, nav#nav,
+        section#container, div.content, aside#aside,
+        footer#footer { padding:10px; }
+     
+        nav#nav ul { margin:0; padding:0; list-style:none; }
+        nav#nav ul li { background:#eee; padding:10px; display:inline-block; }
+        div.content { width:60%; float:left; }
+        side#aside { width:30%; float:right; }        
+        section#container::after { content:""; display:block; clear:both; }
+        @media screen and (max-width: 910px) {
+        div#wrap { width:calc(100% - 20px); }
+        div.content { width:calc(100% - 20px - 240px - 20px); }
+        aside#aside { width:220px; }
+            @media screen and (max-width: 650px) {
+    div.content,
+    aside#aside { width:calc(100% - 20px); float:none; }
+}
+}
+</style>
+<body>
+<div id="wrap">
+    <header id="header">
+        <h1>blog</h1>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="/ageFace/blog/list.html">홈</a></li>
+            <li><a href="https://melonpeach.tistory.com">MelonPeach</a></li>
+            <li><a href="/ageFace/index.html">FaceAge</a></li>
+        </ul>
+    </nav>
+    <section id="container">
+        <div class="content">
+            <article>
+                <h2>
+                    <a href="/ageFace/blog/content1.html">자바란?(java)</a>
+                </h2>
+                <p>java를 시작하기전에 자바에 대해 설명합니다.</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="/ageFace/blog/content2.html">변수와 자료형</a>
+                </h2>
+                <p>변수와 자료형에 대해 설명합니다.</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="/ageFace/blog/content3.html">연산자</a>
+                </h2>
+                <p>연산자에 대해 설명합니다.</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="/ageFace/blog/content4.html">제어문</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">5</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">6</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">7</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">8</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">9</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">10</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">11</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">12</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">13</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">14</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">15</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            <article>
+                <h2>
+                    <a href="">16</a>
+                </h2>
+                <p>요약내용</p>
+            </article>
+            
+           
+        </div>
+        <aside id="aside">
+            # 사이드바
+        </aside>
+        
+        <div style="clear:both;"></div>
+    </section>
+    <footer id="footer">
+        # 푸터       
+    </footer>
+</div>
+</body>
+</html>
