@@ -1,0 +1,4 @@
+User-Agent:*
+Allow: /
+
+sitemap: https://faceage.site/sitemap.xml
