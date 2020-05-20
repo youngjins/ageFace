@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<script data-ad-client="ca-pub-5219481742141604" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<head>
+    <meta name="naver-site-verification" content="dd19aec183363edcd3508d2c7ba8d15ae58dedc2" />
+    <title>blog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+    div#wrap {
+        width: 900px;
+        margin: 0 auto;
+        background: #ddd;
+    }
+
+    header#header {
+        background: #fdd;
+    }
+
+    nav#nav {
+        background: #dfd;
+    }
+
+    section#container {
+        background: #ddf;
+    }
+
+    div.content {
+        background: #eee;
+    }
+
+    footer#footer {
+        background: #ffe;
+    }
+
+    div#warp,
+    header#header,
+    nav#nav,
+    section#container,
+    div.content,
+    aside#aside,
+    footer#footer {
+        padding: 10px;
+    }
+
+    nav#nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav#nav ul li {
+        background: #eee;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    div.content {
+        width: 97.7%;
+        float: left;
+    }
+
+    section#container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @media screen and (max-width: 910px) {
+        div#wrap {
+            width: calc(100% - 20px);
+        }
+        div.content {
+            width: calc(100% - 20px - 240px - 20px);
+        }
+        @media screen and (max-width: 650px) {
+            div.content {
+                width: calc(100% - 20px);
+                float: none;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>blog</h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="/ageFace/blog/list.html">홈</a>
+                </li>
+                <li>
+                    <a href="https://melonpeach.tistory.com">MelonPeach</a>
+                </li>
+                <li>
+                    <a href="/ageFace/index.html">FaceAge</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="container">
+            <div class="content">
+                <article>
+
+                    <p>
+                        <h2>
+                            메소드의 정의
+                        </h2>
+                        <strong>* 메소드</strong>
+                        <br/> - 어떤 작업을 수행하기 위한 명령문의 집합
+                        <br/> - 어떤 값(패러미터)을 받아서 처리하고 그 결과(리턴값)를 되돌려 준다.
+                        <br/> - 반복하여 사용하는 내용에 대해 사용하면 중복 코드를 막을 수 있다.
+                        <br/> - 모듈화로 인해 코드의 가독성을 높인다.
+                        <br/>
+                        <br/>
+                        <strong>* 접근 제어자</strong>
+                        <br/> - 해당 메서드에 접근할 수 있는 범위를 명시.
+                        <br/>
+                        <br/>
+                        <strong>* 리턴타입</strong>
+                        <br/> - 메서드가 모든 작업을 마치고 반환하는 데이터의 타입을 명시.
+                        <br/>
+                        <br/>
+                        <strong>* 메서드 명</strong>
+                        <br/> - 메서드를 호출하기 위한 이름.
+                        <br/>
+                        <br/>
+                        
+                        <strong>* 매개변수목록</strong>
+                        <br/> - 메서드가 모든 작업을 마치고 반환하는 데이터의 타입을 명시.
+                        <br/>
+                        <br/>
+                    
+                    <strong>* 예제</strong>
+                        <br/> - 접근제어자 [지정예약어] 리턴타입 메소드명(매개변수목록)[throws 예외클래스들]
+                                {
+                                실행문;
+                                실행문;
+                                }
+                                public int add(int x, int y){
+                                int result = x + y;
+                                return result;
+                                }
+                        <br/>
+                        <br/>
+                    
+                        <h2>
+                            매개변수 전달 기법
+                        </h2>
+
+                        <strong>* Call by Value</strong>
+                        <br/> - 기본형 매개변수이며 값을 전달한다.
+                        <br/> - int a = 10;
+                        <br/> - int b = 20;
+
+                        <br/> - int num = sum(a, b);
+
+
+                        <br/>
+                        <br/>
+                        <strong>* Call by Reference</strong>
+                        <br/> - 참조형 매개변수를 전달하며 데이터의 참조값(주소)를 전달한다
+                        <br/> - StringBuffer sb = new StringBuffer(“메시지”);
+
+                    
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <h2>
+                            리턴값
+                        </h2>
+                        <strong>* 리턴값</strong>
+                        <br/> - 메소드를 실행한 후 결과로 되돌려 주는 값
+                        <br/> - return 예약어를 이용.
+                        <br/>
+                        <br/>
+                        <strong>* 종류</strong>
+                        <br/> - void : 실행 후 돌려 줄 결과가 없을 때
+
+                        <br/> - 기본 자료형 : 8대 기본자료형
+                        <br/> - 레퍼런스 자료형 : 모든 클래스나 인터페이스와 같은 레퍼런스 타입의 자료형
+                        <br/>
+                        <br/>
+                        
+                    </p>
+                </article>
+            </div>
+            <div style="clear:both;"></div>
+        </section>
+        <footer id="footer">
+            # footer
+        </footer>
+    </div>
+</body>
+
+</html>
