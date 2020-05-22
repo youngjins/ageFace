@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<script data-ad-client="ca-pub-5219481742141604" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<head>
+    <meta name="naver-site-verification" content="dd19aec183363edcd3508d2c7ba8d15ae58dedc2" />
+    <title>blog</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style>
+    div#wrap {
+        width: 900px;
+        margin: 0 auto;
+        background: #ddd;
+    }
+
+    header#header {
+        background: #fdd;
+    }
+
+    nav#nav {
+        background: #dfd;
+    }
+
+    section#container {
+        background: #ddf;
+    }
+
+    div.content {
+        background: #eee;
+    }
+
+    footer#footer {
+        background: #ffe;
+    }
+
+    div#warp,
+    header#header,
+    nav#nav,
+    section#container,
+    div.content,
+    aside#aside,
+    footer#footer {
+        padding: 10px;
+    }
+
+    nav#nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav#nav ul li {
+        background: #eee;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    div.content {
+        width: 97.7%;
+        float: left;
+    }
+
+    section#container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @media screen and (max-width: 910px) {
+        div#wrap {
+            width: calc(100% - 20px);
+        }
+        div.content {
+            width: calc(100% - 20px - 240px - 20px);
+        }
+        @media screen and (max-width: 650px) {
+            div.content {
+                width: calc(100% - 20px);
+                float: none;
+            }
+        }
+    }
+</style>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>blog</h1>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="/ageFace/blog/list.html">홈</a>
+                </li>
+                <li>
+                    <a href="https://melonpeach.tistory.com">MelonPeach</a>
+                </li>
+                <li>
+                    <a href="/ageFace/index.html">FaceAge</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="container">
+            <div class="content">
+                <article>
+
+                    <p>
+                        <h2>
+                            객체와 클래스
+                        </h2>
+                        <strong>* 객체 지향 프로그래밍(OOP, Object Oriented Programming)</strong>
+                        <br/> - 객체 지향 프로그밍에서는 모든 데이터를 객체(Object)로 취급하며, 이러한 객체가 프로그램의 중 심이 된다.
+
+                        <br/>
+                        <br/>
+                        <strong>* 객체</strong>
+                        <br/> - 객체란 어떤 대상이 상태(state)와 행위(behavior)를 갖는 것.
+                        <br/> - 소프트웨어 객체는 상태를 나타내기 위해 변수(variable)를 사용하며, 행위들은 메서드(method)로 표현된다.
+                        <br/>
+                        <br/>
+                        <strong>* 클래스
+                        </strong>
+                        <br/> - 클래스는 상태와 행위가 같은 객체들을 대표하는 것.
+                        <br/> - 객체의 상태를 나타내는 필드(field)와 객체의 행위을 나타내는 메서드(method)로 구성된다.
+                        <br/> - 개념적(추상적)이며 종합적이다.
+                        <br/> - 객체를 정의하는 모체(틀).
+
+                        <br/> - 객체를 통해서만 구체화된다.
+                        <br/> - 객체의 종류를 나타내는 데이터 타입.
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h2>
+                            객체의 생성과 사용
+                        </h2>
+
+                        <strong>* 클래스 선언</strong>
+                        <br/> - [접근제어자] [지정예약어] class 클래스명 [extends 클래스] [implements 인터페이스]
+                        <br/> - public abstract class Child extends Parent implements Serializable{ }
+
+                        <br/>
+                        <br/>
+                        <strong>* 객체 생성</strong>
+                        <br/> - 자바의 new 연산자를 사용하여 생성한다.
+                        <br/> - 클래스명 객체명 = new 생성자(매개변수);
+                        <br/> - 예) Person p = new Person(“홍길동”);
+
+                        <br/>
+                        <br/>
+
+                        <strong>* 멤버 참조</strong>
+                        <br/> - 멤버 참조는 ‘.’ 연산자를 이용한다
+                        <br/> - 예) p.name; , p.run();
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <h2>
+                            클래스의 구성요소
+                        </h2>
+                        <strong>* 클래스는 멤버(member)로 속성을 표현하는 필드(field)와 기능을 표현하는 메서드 (method)로 구성된다.</strong>
+                        <br/>
+                        <strong>* 또한 클래스는 생성된 객체의 필드를 초기화하는 특별한 메서드인 생성자를 가진다.</strong>
+                        <br/>
+                        <strong>* 필드(Member Field) 또는 변수(Member Variable)
+                        </strong>
+                        <br/>
+                        <strong>* 메소드(Member Method)</strong>
+                        <br/>
+                        <strong>* 생성자(Constructor)</strong>
+                        <br/>
+
+                        <br/>
+                        <br/>
+                        
+                        <h2>
+                            생성자
+
+                        </h2>
+                        <strong>* 생성자(Constructor)
+
+                        </strong>
+                        <br/> - 객체의 생성과 동시에 자동으로 호출되는 메서드.
+                        <br/> - 객체 생성시 변수의 초기화 작업을 하는 메서드.
+                        <br/> - 생성자의 이름은 클래스 이름과 같아야 하며, 리턴 값을 갖지 않는다.(void형으로 선언하지 않는다.)
+                        <br/> - Obj = new Person(“홍길동”, 25); 하나의 클래스가 여러 개의 생성자를 가질 수 있다. (중복 정의 가능).
+                        <br/>
+                        <br/>
+                        <strong>* this</strong>
+                        <br/> - 객체 내부에서 객체 자신을 참조하는 변수.
+                        <br/> - 지역변수와 멤버변수를 구별할 때 사용하는 변수.
+                        <br/>
+                        <br/>
+                        <strong>* this()</strong>
+                        <br/> - 현재 객체의 생성자를 의미하는 것이다
+                        <br/> - 반드시 생성자의 첫 행에 정의해야 하며, 그렇지 않을 시 Compile 오류가 발생한다.
+                        <br/> - this()를 이용 한 클래스내의 특정 생성자에서 Overloading되어 있는 다른 생성자를 호출할 수 있다.
+                        <br/> - 그렇게 함으로 해서 생성자에서 코딩 내용이 중복되는 부분을 막을 수 있다.
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h2>
+                            필드(Field)
+
+                        </h2>
+                        <strong>* 필드(Field)</strong>
+                        <br/> - 객체의 특징적인 속성을 정의한 것으로, 클래스에 포함된 변수를 의미한다.
+                        <br/> - 변수와 상수 즉, 데이터를 표현
+                        <br/> - 필드의 형태가 클래스(static field) 와 인스턴스(instance)로 필드 개념이 달라진다.
+
+                        <br/>
+                        <br/>
+                        <strong>* 캡슐화(encapsulation)</strong>
+                        <br/> - 캡슐화란 데이터(속성)와 데이터를 처리하는 함수를 하나로 묶는 것.
+                        <br/> - 외부에서 객체 내부를 직접 접근하거나 조작할 수 없고, 외부에서 접근할 수 있도록 정의된 오퍼레이션을 통해서만 관련 데이터를 접근할 수 있다.
+
+                        <br/>
+                        <br/>
+                        <strong>* 정보은닉을 위한 private 접근 제한자
+                        </strong>
+                        <br/> - 정보은닉(Information hiding) : 객체의 구성 요소를 외부로부터 감추는 기술
+                        <br/> - 객체에 포함된 정보의 손상과 오용을 막을 수 있다.
+
+                        <br/>
+                        <br/>
+                        <strong>* 상수 필드의 정의 : final</strong>
+                        <br/> - final int a = 100;
+                        <br/>
+
+                        <br/>
+                        <br/>
+
+                        <h2>
+                            필드의 구분
+
+                        </h2>
+                        <strong>* 인스턴스 변수(필드)</strong>
+                        <br/> - 각 인스턴스의 개별적인 저장공간. 인스턴스마다 다른 값 저장가능
+                        <br/> - 인스턴스 생성 후, ‘객체변수.인스턴스변수명’으로 접근
+
+                        <br/> - 인스턴스를 생성할 때 생성되고, 참조변수가 없을 때 가비지 컬렉터에 의해 자동 제거됨
+                        <br/> - 인스턴스(instance) : 어떤 클래스로 부터 만들어진 객체를 그 클래스의 인스턴스라고 한다.
+                        <br/>
+                        <br/>
+                        <br/>
+                        <strong>* 클래스 변수(필드)(static field)</strong>
+                        <br/> - 같은 클래스의 모든 인스턴스들이 공유하는 변수
+                        <br/> - 인스턴스 생성없이 ‘클래스이름.클래스변수명’으로 접근
+
+                        <br/> - 클래스가 로딩될 때 생성되고 프로그램이 종료될 때 소멸
+                        <br/>
+                        <br/>
+                        <br/>
+                        <strong>* 지역 변수</strong>
+                        <br/> - 메서드 내에 선언되며, 메서드의 종료와 함께 소멸
+
+                        <br/> - 조건문, 반복문의 블럭{} 내에 선언된 지역변수는 블럭을 벗어나면 소멸
+
+                    </p>
+                </article>
+            </div>
+            <div style="clear:both;"></div>
+        </section>
+        <footer id="footer">
+            # footer
+        </footer>
+    </div>
+</body>
+
+</html>
